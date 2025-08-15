@@ -3,11 +3,12 @@ import React, { useMemo, useState, useEffect } from "react";
 import { format, addDays, startOfWeek, endOfWeek, isWithinInterval, startOfMonth, endOfMonth, eachDayOfInterval, isSameMonth, parse, parseISO, getISOWeek, getYear, getMonth, isSameDay } from "date-fns";
 import Papa from "papaparse";
 import { CalendarDays, Mail, MessageSquare, Voicemail, Upload, AlertTriangle, CheckCircle2, Filter } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import { Progress } from "@/components/ui/progress";
+// Replace alias imports with relative paths to ensure proper module resolution on Vercel
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card";
+import { Button } from "../components/ui/button";
+import { Badge } from "../components/ui/badge";
+import { Input } from "../components/ui/input";
+import { Progress } from "../components/ui/progress";
 
 /**
  * MARKETING SCHEDULE TRACKER (Single-file React app)
